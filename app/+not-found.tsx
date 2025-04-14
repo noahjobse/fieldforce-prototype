@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 
 import { Text, View } from '@/components/Themed';
 
+// Displays a fallback screen when a user navigates to a route that doesn't exist
 export default function NotFoundScreen() {
   return (
     <>

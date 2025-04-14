@@ -6,6 +6,8 @@ import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
 
+// Root layout configuration for the Expo Router app, including theme setup, font loading, splash screen handling, and navigation stack definition
+
 import { useColorScheme } from '@/components/useColorScheme';
 
 export {
