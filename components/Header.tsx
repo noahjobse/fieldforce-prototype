@@ -20,8 +20,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 12,
     paddingHorizontal: 16,
-    marginTop: 48, // Added top margin
-  },
+    marginTop: 48,
+    backgroundColor: '#2a9d8f', // ✅ Add this
+  },  
   logoContainer: {
     backgroundColor: '#ffffff',
     height: 32,

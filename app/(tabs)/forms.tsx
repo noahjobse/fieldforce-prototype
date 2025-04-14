@@ -1,19 +1,19 @@
 import { View, Text, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { useRouter } from 'expo-router';
 import { TrashIcon } from '@/components/ui/Icons';
 
-// This is the forms page
 export default function FormsScreen() {
+  const router = useRouter(); // ✅ Missing before
+
   return (
     <View style={styles.container}>
-      {/* Title Header */}
       <View style={styles.titleContainer}>
         <Text style={styles.title}>Forms</Text>
       </View>
 
-      {/* Scrollable Form List */}
       <ScrollView style={styles.formsList}>
-        {/* New Form Button */}
-        <TouchableOpacity style={styles.newFormButton}>
+        {/* ✅ Fixed New Form button */}
+        <TouchableOpacity style={styles.newFormButton} onPress={() => router.push('/forms/form-type-selector')}>
           <Text style={styles.newFormText}>New Form</Text>
         </TouchableOpacity>
 
